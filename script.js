@@ -52,7 +52,7 @@ function createAutoCompleteDropdown(list) {
     const nameBtn = document.createElement("button");
     nameBtn.classList.add("dropdownItemButton");
     nameBtn.innerHTML = repo.name;
-    nameBtn.addEventListener("click", async function () {
+    nameBtn.addEventListener("click", () => {
       autoCompleteInput.value = "";
       dropdownList.innerHTML = "";
       const repository = document.createElement("li");
