@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+.main-container {
+  background-color: #c4c4c4;
+  margin: auto;
+  width: 763px;
+  padding: 62px 77px;
+  display: grid;
+  align-content: space-between;
+  height: 661px;
+}
+
+.main-container form input {
+  font-size: 48px;
+  padding: 5px 13px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+}
+
+ul {
+  padding-left: 0;
+}
+li {
+  list-style: none;
+}
+p {
+  margin: 0;
+}
+.dropdownList {
+  overflow-y: scroll;
+  margin: 0;
+  padding-left: 0px;
+}
+
+.dropdownItem {
+  border: solid 2px #000000;
+  background: #e3e3e3;
+}
+
+.dropdownItemButton {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 30px;
+  text-align: start;
+  padding: 9px 13px;
+  padding-top: 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+.dropdownItem:hover {
+  background: #65cdf9;
+}
+
+.repoList {
+  font-size: 24px;
+}
+
+.repository {
+  background: #e27beb;
+  border: solid 1px #000000;
+  padding: 8px 16px;
+  position: relative;
+}
+
+.closeButton {
+  display: block;
+  border: none;
+  outline: none;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.closeButton::before,
+.closeButton::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 42px;
+  height: 4px;
+  background-color: #ff0000;
+  transform-origin: center;
+}
+
+.closeButton::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.closeButton::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
